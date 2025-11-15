@@ -36,5 +36,10 @@ jobs:
           -Dsonar.projectKey=KonpalM_demo-sast-python
           -Dsonar.organization=konpalm
           -Dsonar.sources=.
+          -Dsonar.inclusions=**/*.py
+          -Dsonar.exclusions=tests/**
           -Dsonar.python.version=3
+          -Dsonar.newCode.referenceBranch=main
+          -Dsonar.analysis.mode=publish
+          -Dsonar.verbose=true
 
