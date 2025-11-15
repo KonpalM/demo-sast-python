@@ -31,3 +31,10 @@ jobs:
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         SONAR_HOST_URL: "https://sonarcloud.io"
+      with:
+        args: >
+          -Dsonar.projectKey=KonpalM_demo-sast-python
+          -Dsonar.organization=konpalm
+          -Dsonar.sources=.
+          -Dsonar.python.version=3
+
